@@ -2528,7 +2528,7 @@
     (pin "2" (uuid 820555b1-8048-4f8d-ba63-ec499b96e4ec))
   )
 
-  (symbol (lib_id "Comparator:LM393") (at 107.95 175.26 0) (mirror x) (unit 2)
+  (symbol (lib_id "Comparator:LM393") (at 107.95 175.26 0) (unit 2)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4ed54f78-d2a4-45c4-9ee2-6c1ea00fa62f)
     (property "Reference" "U2" (id 0) (at 107.95 165.1 0))
