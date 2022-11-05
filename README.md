@@ -11,7 +11,7 @@ Most low-cost (lab/bench) power supplies are only able to supply power, they are
  - Peak current dissipation: >5A
  - Continuous power dissipation: >5W, for example: 
    - Brake a 1000 gcm^2 rotor, from 3.000 rpm to 0 rpm every second.
-   - Brake a 33 gmcm^2 rotor from 16.000 rpm to 0 rpm every second.
+   - Brake a 33 gcm^2 rotor from 16.000 rpm to 0 rpm every second.
  - I'd like to use as many "jellybean" components as possible, to keep the cost down and to enable cheap manufacturing services.
  
 
@@ -21,6 +21,10 @@ The global design can be summarized by a comperator, a MOSFET, a polyfuse and so
 ![](docs/design.png)
 
 The idea is that the comperator simply enables the MOSFET when the bus voltage is higher than a set limit. There is some positive feedback for a bit of hysteresis: To prevent fast fluttering of the MOSFET. The voltage bus has significant capacitance, so the voltage doesn't instantly drop to 0, it "depletes" the capacitors until the voltage level is acceptable again.
+
+The picture below shows the PCB design, it's shaped to fit around my power supply (Owon SPE-series).
+
+![](docs/design_3d.png)
 
 ## Simulation
 An LTSpice simulation is made to validate the design before prototyping. A constant-current source simulates the regenerative braking of a motor. 
