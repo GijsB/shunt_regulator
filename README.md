@@ -12,8 +12,8 @@ Most low-cost (lab/bench) power supplies are only able to supply power, they are
  - Voltage range: 24V - 55V
  - Peak current dissipation: >5A
  - Continuous power dissipation: >5W, for example: 
-   - Brake a 1000 gcm^2 rotor, from 3.000 rpm to 0 rpm every second.
-   - Brake a 33 gcm^2 rotor from 16.000 rpm to 0 rpm every second.
+   - Brake a 1000 gcm^2 rotor, from 3.000 RPM to 0 RPM every second.
+   - Brake a 33 gcm^2 rotor from 16.000 RPM to 0 RPM every second.
  - Maximum (one time) energy pulse: 25 Joule
    - Enough to brake a 5000 gcm^2 rotor from 3.000 RPM to 0 RPM.
  - I'd like to use as many "jellybean" components as possible, to keep the cost down and to enable cheap manufacturing services.
@@ -51,7 +51,7 @@ The image below shows a zoomed-in view.
  4. Enable the power supply.
  5. Turn the potentiometer until the LED is off, but it's right below turning on.
  6. Increase the power supply voltage, make sure the LED turns on. Keep slowly increasing the voltage, verify that the current increases rapidly before Vmax is reached.
- 7. Disable the power supply voltage to 3 volts below Vmax again. Lower is also fine, if your application allows.
+ 7. Disable the power supply voltage to 3 volts below Vmax again. Lower is even better, if your application allows.
  8. Increase the power supply current limit again to whatever your application requires.
 
 
