@@ -7,11 +7,15 @@ Most low-cost (lab/bench) power supplies are only able to supply power, they are
 ## Requirements
  - Mount right on the binding-posts of my power supply
  - Inherently safe, no chance of burning my house down!
+   - Maximum component temperature of <100 degC.
+   - Fuses to limit further overloading.
  - Voltage range: 24V - 55V
  - Peak current dissipation: >5A
  - Continuous power dissipation: >5W, for example: 
    - Brake a 1000 gcm^2 rotor, from 3.000 rpm to 0 rpm every second.
    - Brake a 33 gcm^2 rotor from 16.000 rpm to 0 rpm every second.
+ - Maximum (one time) energy pulse: 25 Joule
+   - Enough to brake a 5000 gcm^2 rotor from 3.000 RPM to 0 RPM.
  - I'd like to use as many "jellybean" components as possible, to keep the cost down and to enable cheap manufacturing services.
  
 
