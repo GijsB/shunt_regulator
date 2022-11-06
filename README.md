@@ -44,5 +44,16 @@ The image below shows a zoomed-in view.
 ![](docs/ltspice_result_zoomed.png)
 
 
+## Usage
+ 1. Identify the maximum safe voltage, this is the voltage that shall not be exceeded: Vmax.
+ 2. Set the voltage of the power supply <B>3 volts below Vmax</B>.
+ 3. Set the current limit of the power supply to 50mA.
+ 4. Enable the power supply.
+ 5. Turn the potentiometer until the LED is off, but it's right below turning on.
+ 6. Increase the power supply voltage, make sure the LED turns on. Keep slowly increasing the voltage, verify that the current increases rapidly before Vmax is reached.
+ 7. Disable the power supply voltage to 3 volts below Vmax again. Lower is also fine, if your application allows.
+ 8. Increase the power supply current limit again to whatever your application requires.
+
+
 ## Experiments
-TODO
+WARNING: This device is not verified yet
