@@ -56,4 +56,35 @@ The image below shows a zoomed-in view.
 
 
 ## Experiments
-WARNING: This device is not verified yet
+WARNING: This device is not fully verified yet
+
+### Power supply test
+In this test, the shunt regulator is connected to a power supply. The power supply has a current limit of 500mA, the shunt regulator should limit the voltage. The picture below shows the resulting waveform. The yellow trace represents the power supply voltage, the blue trace represents the current from the power supply to the shunt regulator.
+
+![](docs/voltage_limit.png)
+
+
+### Braking a motor from 1200 RPM to 0 RPM
+The main purpose of this shunt regulator is to be able to connect motor-controllers to this power supply, so this test verifies that it will effectively limit the voltage when and ESC is (regeneratively) braking a motor.
+
+The yellow trace represents the system voltage, the blue trace represents the current between the ESC and the PSU + Shunt regulator.
+
+![](docs/1200rpm_brake.png)
+
+The screenshot below shows the same waveform, but zoomed in.
+
+![](docs/1200rpm_brake_zoomed.png)
+
+
+### Braking a motor from 2500 RPM to 0 RPM
+This test is identical to the previous one, but with 4 times the amount of energy.
+
+![](docs/2500rpm_brake.png)
+
+The screenshot below shows the same waveform, but zoomed in.
+
+![](docs/2500rpm_brake_zoomed.png)
+
+
+### Conclusion
+It looks like the shunt regulator works, the bus voltage is effectively limited.
